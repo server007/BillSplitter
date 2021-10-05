@@ -1,0 +1,39 @@
+<div class="scrollmenu ">
+    <div id="showProfiles" *ngFor="let profile of profilesList"> 
+        <table>
+            <tr>
+                <div class="profileImage"><img src="{{profile.image}}" alt=""></div>
+            </tr>
+            <tr>
+                <div class="profilename">{{ profile.name }}</div>
+            </tr>
+            <tr class="balance">
+                <div class="profileBalance" *ngIf="profile.isShown && profile.balance < 0" style="color: red;">{{ profile.balance }}</div>
+                <div class="profileBalance" *ngIf="profile.isShown && profile.balance >= 0" style="color: green;">{{ profile.balance }}</div>
+                <img id="eyeImage" src="{{profile.eyeImageUrl}}" (click)="toggleShow(profile.id)">
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="scrollmenu">
+    <div id="showGoups" *ngFor="let group of groupList">
+        <table>
+            <tr class="groupColumn">
+                <!-- <div class="groupName">{{ group.name }}</div> -->
+                <button type="button" class="groupName" class="btn-outline-dark  ">{{ group.name }}</button>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+        <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Features</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
+    </li>
+</ul>

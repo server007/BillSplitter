@@ -1,0 +1,38 @@
+#mainHeading {
+    color: #c8d8e4;
+    font-size: larger;
+    text-align: center;
+    position: fixed;
+    padding-top: 1vw;
+    left: 0%;
+    right: 0%;
+    font-size: 3vw;
+}
+
+.left {
+    position: fixed;
+    width: 70vw;
+    margin-top: 9vw;
+    margin-left: 2vw;
+    font-size: 1vw;
+}
+
+.right {
+    position: fixed;
+    width: 30vw;
+    margin-top: 30vw;
+    margin-left: 70vw;
+    margin-right: 2vw;
+    font-size: 1vw;
+}
+
+#profiles {
+    position: fixed;
+    height: 30vw;
+    width: auto;
+}
+
+#journal {
+    position: fixed;
+    margin-top: 15vw;
+}

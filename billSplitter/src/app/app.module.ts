@@ -3,13 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponentComponent } from './login-component/login-component.component';
 
 import { NgxPaginationModule } from 'ngx-pagination';
+import { AdditionComponent } from './components/addition/addition.component';
+import { ProfilesComponent } from './components/profiles/profiles.component';
+import { JournalComponent } from './components/journal/journal.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponentComponent
+    AdditionComponent,
+    ProfilesComponent,
+    JournalComponent,
   ],
   imports: [
     BrowserModule,
